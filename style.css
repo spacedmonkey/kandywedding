@@ -1,0 +1,207 @@
+/*
+ Theme Name:   Wedding theme
+ Theme URI:    http://example.com/twenty-fifteen-child/
+ Description:  Twenty Fifteen Child Theme
+ Author:       John Doe
+ Author URI:   http://example.com
+ Template:     twentythirteen
+ Version:      1.0.0
+ License:      GNU General Public License v2 or later
+ License URI:  http://www.gnu.org/licenses/gpl-2.0.html
+ Tags:         light, dark, two-columns, right-sidebar, responsive-layout, accessibility-ready
+ Text Domain:  twenty-fifteen-child
+*/
+
+@import url("../twentythirteen/style.css");
+
+@font-face {
+    font-family: 'abraham_lincolnregular';
+    src: url('assets/fonts/abrahamlincoln-webfont.eot');
+    src: url('assets/fonts/abrahamlincoln-webfont.eot?#iefix') format('embedded-opentype'),
+         url('assets/fonts/abrahamlincoln-webfont.woff2') format('woff2'),
+         url('assets/fonts/abrahamlincoln-webfont.woff') format('woff'),
+         url('assets/fonts/abrahamlincoln-webfont.ttf') format('truetype'),
+         url('assets/fonts/abrahamlincoln-webfont.svg#abraham_lincolnregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+.navbar{
+	background: #e8e5ce;
+}
+
+body{
+	background: #f7f5e7 !important;
+}
+.site{
+	background: none;
+}
+
+.site-info,
+.sidebar .comments-title,
+.sidebar .comment-list,
+.sidebar .must-log-in,
+.sidebar .comment-reply-title,
+.sidebar .comment-navigation,
+.sidebar .comment-respond .comment-form,
+.error404 .page-header,
+.error404 .page-content,
+.page-title,
+.sidebar .page-content,
+.archive-title,
+.archive-meta,
+.author.sidebar .author-info,
+.post-navigation .nav-links,
+.sidebar .paging-navigation .nav-links,
+.image-navigation,
+.attachment .entry-header,
+.sidebar .entry-header,
+.sidebar .entry-content,
+.sidebar .entry-summary,
+.sidebar .entry-meta,
+.site-main .sidebar-inner,
+.site-header .home-link,
+.main-navigation,
+.entry-header, .entry-content, .entry-summary, .entry-meta,
+.site-footer .widget-area,
+.comments-title, .comment-list, .comment-reply-title, .must-log-in, .comment-respond .comment-form, .comment-respond iframe
+{
+	max-width: 800px;
+}
+.main-navigation,
+.site-header .home-link{
+	text-align: center;
+	
+}
+ul.nav-menu, div.nav-menu > ul{
+	padding: 0;
+}
+#navbar,
+h1, h2, h3, h4, h5, h6{
+	font-family: 'abraham_lincolnregular' !important;
+	font-style: normal !important;
+}
+.site-header .home-link{
+	padding: 58px 0px 0px;
+}
+.site-header .home-link h1{
+	font-size: 96px;
+	background: url('assets/img/right.png') no-repeat left center;
+	padding: 0;
+
+}
+.site-header .home-link h1 a{
+	background: url('assets/img/left.png') no-repeat right center;
+	display: block;
+	color: #000;
+}
+.site-header .home-link h2{
+	font-size: 34px;
+	font-weight: bold;
+}
+
+.site-footer .widget-title, .site-footer .widget-title a, .site-footer .wp-caption-text{
+	color: #000;
+	font-style: normal;
+}
+
+.site-footer .widget{
+	padding-left: 0px;
+}
+
+.navbar, 
+.page-header,
+.archive-header,
+.attachment .hentry,
+.attachment .entry-content,
+.site-footer .sidebar-container,
+.comment-respond,
+.site-footer{
+	/*background-color: transparent;*/
+}
+.nav-menu li a {
+	font-size: 24px;
+	padding: 20px;
+
+}
+
+
+.nav-menu li:hover > a, .nav-menu li a:hover, .nav-menu li:focus > a, .nav-menu li a:focus{
+	background-color: transparent;
+	color: #000;
+}
+.nav-menu .current_page_item > a, .nav-menu .current_page_ancestor > a, .nav-menu .current-menu-item > a, .nav-menu .current-menu-ancestor > a{
+	font-style: normal;
+	background: url('assets/img/menu-selected.png') no-repeat center bottom;
+}
+
+input[type="text"], input[type="email"], input[type="url"], textarea, .wpcf7-select {
+  max-width: 100%;
+  width: 100%;
+  padding: 12px;
+}
+.wpcf7-select {
+	font-size: 3em;
+}
+
+.wpcf7-textarea{
+	
+}
+
+.sidebar .entry-header, .sidebar .entry-content, .sidebar .entry-summary, .sidebar .entry-meta{
+	padding-left: 0px;
+}
+
+.has-post-thumbnail{}
+.has-post-thumbnail .entry-content-inside,
+.has-post-thumbnail .entry-thumbnail{
+	float: left;
+}
+.has-post-thumbnail .entry-content-inside{
+	width: 61%;
+}
+.has-post-thumbnail .entry-thumbnail{
+	width: 35%;
+	margin: 0px 0% 0px 4%;
+}
+.hasCountdown{
+	padding: 0;
+}
+.site-info{
+	text-align: center;
+}
+@media (max-width: 767px) {
+	.site-header .home-link{
+		padding: 5px 0px 0px;
+	}
+	.site-description {
+	  clip: rect(1px, 1px, 1px, 1px);
+	  position: absolute;
+	}
+	.hentry{
+		padding: 40px 20px;
+	}
+	.has-post-thumbnail .entry-thumbnail{
+		text-align: center;
+	}
+	.entry-thumbnail img {
+		display: inline;
+	}
+	.has-post-thumbnail .entry-content-inside,
+	.has-post-thumbnail .entry-thumbnail{
+		float: none;
+		width: auto;
+	}
+}
+@media (max-width: 643px){
+	.site-header .home-link h1,
+	.site-header .home-link h1 a{
+		background-image: none;
+		font-size: 74px;
+	}
+	
+	.nav-menu .current_page_item > a, .nav-menu .current_page_ancestor > a, .nav-menu .current-menu-item > a, .nav-menu .current-menu-ancestor > a{
+		background-image: none;
+	}
+}
