@@ -1,7 +1,7 @@
 {
-	"name"       : "spacedmonkey/kandyweeding",
+	"name"       : "spacedmonkey/kandywedding",
 	"description": "A WordPress theme for Spacedmonkey",
-	"homepage"   : "https://bitbucket.org/spacedmonkey/kandyweeding/",
+	"homepage"   : "https://bitbucket.org/spacedmonkey/kandywedding/",
 	"type"       : "wordpress-theme",
 	"license"    : "GPL-2.0+",
 	"authors"    : [
