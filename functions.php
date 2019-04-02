@@ -1,7 +1,7 @@
-<?php 
-	
+<?php
+
 /**
- * 
+ *
  *
  * Sets up theme defaults and registers the various WordPress features that
  * Twenty Twelve supports.
@@ -16,7 +16,7 @@
  * @since Twenty Twelve 1.0
  */
 function kandywedding_setup() {
-	
+
 	/*
 	 * This theme supports custom background color and image,
 	 * and here we also set up the default background color.
@@ -25,12 +25,27 @@ function kandywedding_setup() {
 	$args = array(
 		'default-color' => 'f7f5e7',
 		'default-image' => get_stylesheet_directory_uri().'/assets/img/bg.jpg',
-		
+
 	);
 	add_theme_support( 'custom-background', $args );
-	
-	
-	
+
+
+
 }
 add_action( 'after_setup_theme', 'kandywedding_setup' );
 
+if ( ! function_exists( 'wp_body_open' ) ) {
+    /**
+     * Fire the wp_body_open action.
+     *
+     * Added for backwards compatibility to support WordPress versions prior to 5.2.0.
+     *
+     */
+    function wp_body_open() {
+        /**
+         * Triggered after the opening <body> tag.
+         *
+         */
+        do_action( 'wp_body_open' );
+    }
+}
